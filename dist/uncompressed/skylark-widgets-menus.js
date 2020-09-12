@@ -95,19 +95,10 @@ define('skylark-widgets-menus/menus',[
 });
 
 
-define('menus',[
-	"skylark-langx/skylark"
-],function(skylark) {
-
-	return skylark.attach("widgets.menus",{});
-
-});
-
-
 define('skylark-widgets-menus/ButtonMenu',[
 	"skylark-widgets-base/Widget",
 	"skylark-widgets-base/mixins/TextMixin",
-	"../menus"
+	"./menus"
 ],function(Widget,TextMixin,menus){
 	"use strict";
 
@@ -257,17 +248,6 @@ define('skylark-widgets-menus/ButtonMenu',[
 
 	return menus.ButtonMenu = ButtonMenu;
 });
-
-
-
-	var ButtonText = Button.inherit({
-
-		_construct : function (parent) {
-
-		},
-		...TextMixin
-	});
-
 define('skylark-widgets-menus/DropdownMenu',[
 	"skylark-langx-numerics/Vector2",
 	"skylark-domx-geom",
@@ -644,7 +624,7 @@ define('skylark-widgets-menus/ContextMenu',[
 	"skylark-langx-numerics/Vector2",
 	"skylark-domx-geom",
 	"skylark-widgets-base/panels/Panel",
-	"../menus",
+	"./menus",
 	"./ButtonMenu",
 	"./DropdownMenu"
 ],function(

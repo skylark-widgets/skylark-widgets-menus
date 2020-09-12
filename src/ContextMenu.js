@@ -2,7 +2,7 @@ define([
 	"skylark-langx-numerics/Vector2",
 	"skylark-domx-geom",
 	"skylark-widgets-base/panels/Panel",
-	"../menus",
+	"./menus",
 	"./ButtonMenu",
 	"./DropdownMenu"
 ],function(

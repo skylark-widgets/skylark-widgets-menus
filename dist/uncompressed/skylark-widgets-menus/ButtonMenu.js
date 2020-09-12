@@ -1,7 +1,7 @@
 define([
 	"skylark-widgets-base/Widget",
 	"skylark-widgets-base/mixins/TextMixin",
-	"../menus"
+	"./menus"
 ],function(Widget,TextMixin,menus){
 	"use strict";
 
@@ -151,13 +151,3 @@ define([
 
 	return menus.ButtonMenu = ButtonMenu;
 });
-
-
-
-	var ButtonText = Button.inherit({
-
-		_construct : function (parent) {
-
-		},
-		...TextMixin
-	});
