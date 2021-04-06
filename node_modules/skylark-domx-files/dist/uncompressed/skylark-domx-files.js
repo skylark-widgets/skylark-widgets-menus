@@ -125,7 +125,7 @@ define('skylark-domx-files/files',[
      */
     function dropzone(elm, params) {
         params = params || {};
-        var hoverClass = params.hoverClass || "dropzone",
+        var hoverClass = params.hoverClass || "hover",
             droppedCallback = params.dropped;
 
         var enterdCount = 0;
@@ -197,7 +197,7 @@ define('skylark-domx-files/pastezone',[
 ],function(objects, eventer,velm,$, files){
     function pastezone(elm, params) {
         params = params || {};
-        var hoverClass = params.hoverClass || "pastezone",
+        var hoverClass = params.hoverClass || "hover",
             pastedCallback = params.pasted;
 
         eventer.on(elm, "paste", function(e) {

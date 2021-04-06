@@ -6,7 +6,8 @@ define([
 	"./loop",
 	"./negate",
 	"./proxy",
-	"./template"
+	"./template",
+	"./throttle"
 ],function(funcs){
 	return funcs;
 });

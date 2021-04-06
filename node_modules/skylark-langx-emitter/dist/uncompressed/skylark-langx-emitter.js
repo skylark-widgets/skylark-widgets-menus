@@ -87,9 +87,9 @@
 })(function(define,require) {
 
 define('skylark-langx-emitter/Emitter',[
-    "skylark-langx-events/Emitter"
-],function(Emitter){
-    return Emitter;
+    "skylark-langx-events"
+],function(events){
+    return events.Emitter;
 });
 define('skylark-langx-emitter/Evented',[
 	"./Emitter"

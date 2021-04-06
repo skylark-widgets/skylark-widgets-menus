@@ -87,7 +87,7 @@
 })(function(define,require) {
 
 define('skylark-langx-binary/binary',[
-  "skylark-langx-ns/ns",
+  "skylark-langx-ns",
 ],function(skylark){
 	"use strict";
 

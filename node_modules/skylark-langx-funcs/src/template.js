@@ -1,6 +1,8 @@
 define([
-	"./funcs"
-],function(funcs){
+  "skylark-langx-objects",
+  "./funcs",
+  "./proxy"
+],function(objects,funcs,proxy){
     var slice = Array.prototype.slice;
 
    

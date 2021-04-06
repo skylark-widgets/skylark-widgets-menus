@@ -1,5 +1,5 @@
 define([
-  "skylark-langx-ns/ns",
+  "skylark-langx-ns",
 ],function(skylark){
 	"use strict";
 

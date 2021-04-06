@@ -14,7 +14,7 @@
      */
     function dropzone(elm, params) {
         params = params || {};
-        var hoverClass = params.hoverClass || "dropzone",
+        var hoverClass = params.hoverClass || "hover",
             droppedCallback = params.dropped;
 
         var enterdCount = 0;

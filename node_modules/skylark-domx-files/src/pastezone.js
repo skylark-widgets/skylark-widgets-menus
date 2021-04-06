@@ -7,7 +7,7 @@ define([
 ],function(objects, eventer,velm,$, files){
     function pastezone(elm, params) {
         params = params || {};
-        var hoverClass = params.hoverClass || "pastezone",
+        var hoverClass = params.hoverClass || "hover",
             pastedCallback = params.pasted;
 
         eventer.on(elm, "paste", function(e) {

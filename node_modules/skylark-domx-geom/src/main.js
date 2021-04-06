@@ -15,6 +15,8 @@ define([
         "contentRect",
         "height",
         "marginExtents",
+        "marginRect",
+        "marginSize",
         "offsetParent",
         "paddingExtents",
         "pagePosition",
