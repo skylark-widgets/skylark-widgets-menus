@@ -298,10 +298,21 @@ define('skylark-domx-browser/support/fullscreen',[
 
     return browser.support.fullscreen;
 });
+define('skylark-domx-browser/support/touch',[
+	"../browser"
+],function(browser){
+
+    function supportTouch() {
+        return !!('ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch);
+    }
+
+    return browser.support.tocuh = supportTouch();
+});
 define('skylark-domx-browser/main',[
 	"./browser",
 	"./support/css3",
-	"./support/fullscreen"
+	"./support/fullscreen",
+	"./support/touch"
 ],function(browser){
 	return browser;
 });

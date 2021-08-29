@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["./files","./dropzone","./pastezone","./picker","./SingleUploader","./MultiUploader"],function(e){return e});
+define(["./files","./dropzone","./pastezone","./picker"],function(e){return e});
 //# sourceMappingURL=sourcemaps/main.js.map

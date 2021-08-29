@@ -1,8 +1,8 @@
 define([
 	"./menus",
-	"./ButtonMenu",
-	"./ContextMenu",
-	"./DropdownMenu"
+	"./button-menu",
+	"./context-menu",
+	"./dropdown-menu"
 ],function(menus){
 	return menus;
 });

@@ -126,6 +126,10 @@ define([
         return -1;
     }
 
+    function indexOf(array,item) {
+      return array.indexOf(item);
+    }
+
     function makeArray(obj, offset, startWith) {
        if (isArrayLike(obj) ) {
         return (startWith || []).concat(Array.prototype.slice.call(obj, offset || 0));
@@ -139,6 +143,10 @@ define([
     function forEach (arr, fn) {
       if (arr.forEach) return arr.forEach(fn)
       for (var i = 0; i < arr.length; i++) fn(arr[i], i);
+    }
+
+    function last(arr) {
+        return arr[arr.length - 1];     
     }
 
     function map(elements, callback) {
@@ -217,9 +225,13 @@ define([
 
         inArray: inArray,
 
+        indexOf : indexOf,
+
         makeArray: makeArray, // 
 
         toArray : makeArray,
+
+        last : last,
 
         merge : merge,
 

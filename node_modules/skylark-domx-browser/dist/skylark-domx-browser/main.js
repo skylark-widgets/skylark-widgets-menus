@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["./browser","./support/css3","./support/fullscreen"],function(r){return r});
+define(["./browser","./support/css3","./support/fullscreen","./support/touch"],function(r){return r});
 //# sourceMappingURL=sourcemaps/main.js.map

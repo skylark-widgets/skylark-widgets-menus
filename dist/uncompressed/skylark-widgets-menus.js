@@ -95,9 +95,9 @@ define('skylark-widgets-menus/menus',[
 });
 
 
-define('skylark-widgets-menus/ButtonMenu',[
-	"skylark-widgets-base/Widget",
-	"skylark-widgets-base/mixins/TextMixin",
+define('skylark-widgets-menus/button-menu',[
+	"skylark-widgets-base/widget",
+	"skylark-widgets-base/mixins/text-mixin",
 	"./menus"
 ],function(Widget,TextMixin,menus){
 	"use strict";
@@ -248,15 +248,15 @@ define('skylark-widgets-menus/ButtonMenu',[
 
 	return menus.ButtonMenu = ButtonMenu;
 });
-define('skylark-widgets-menus/DropdownMenu',[
-	"skylark-langx-numerics/Vector2",
+define('skylark-widgets-menus/dropdown-menu',[
+	"skylark-langx-numerics/vector2",
 	"skylark-domx-geom",
 
-	"skylark-widgets-base/Widget",
-	"skylark-widgets-base/panels/Panel",
-	"skylark-widgets-base/mixins/TextMixin",
+	"skylark-widgets-base/widget",
+	"skylark-widgets-base/panels/panel",
+	"skylark-widgets-base/mixins/text-mixin",
 	"./menus",
-	"./ButtonMenu"
+	"./button-menu"
 ],function(
 	Vector2,
 	geom,
@@ -620,13 +620,13 @@ define('skylark-widgets-menus/DropdownMenu',[
 
 	return menus.DropdownMenu = DropdownMenu;
 });
-define('skylark-widgets-menus/ContextMenu',[
-	"skylark-langx-numerics/Vector2",
+define('skylark-widgets-menus/context-menu',[
+	"skylark-langx-numerics/vector2",
 	"skylark-domx-geom",
-	"skylark-widgets-base/panels/Panel",
+	"skylark-widgets-base/panels/panel",
 	"./menus",
-	"./ButtonMenu",
-	"./DropdownMenu"
+	"./button-menu",
+	"./dropdown-menu"
 ],function(
 	Vector2,
 	geom,
@@ -786,9 +786,9 @@ define('skylark-widgets-menus/ContextMenu',[
 });
 define('skylark-widgets-menus/main',[
 	"./menus",
-	"./ButtonMenu",
-	"./ContextMenu",
-	"./DropdownMenu"
+	"./button-menu",
+	"./context-menu",
+	"./dropdown-menu"
 ],function(menus){
 	return menus;
 });

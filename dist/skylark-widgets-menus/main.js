@@ -5,5 +5,5 @@
  * @link https://github.com/skylark-widgets/skylark-widgets-menus/
  * @license MIT
  */
-define(["./menus","./ButtonMenu","./ContextMenu","./DropdownMenu"],function(n){return n});
+define(["./menus","./button-menu","./context-menu","./dropdown-menu"],function(n){return n});
 //# sourceMappingURL=sourcemaps/main.js.map

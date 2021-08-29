@@ -3,8 +3,8 @@ define([
   "./funcs",
   "./proxy"
 ],function(objects,funcs,proxy){
+    //ref : underscore
     var slice = Array.prototype.slice;
-
    
     // By default, Underscore uses ERB-style template delimiters, change the
     // following template settings to use alternative delimiters.

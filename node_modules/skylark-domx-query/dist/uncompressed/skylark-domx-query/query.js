@@ -830,7 +830,7 @@ define([
         };
 
         $.fn.reflow = function() {
-            return noder.flow(this[0]);
+            return noder.reflow(this[0]);
         };
 
         $.fn.isBlockNode = function() {
